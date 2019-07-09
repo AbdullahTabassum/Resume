@@ -10,5 +10,7 @@ import Foundation
 
 struct Resume: Codable {
     var name: String
-    var
+    var positions: [Position]
+    var phone: String
+    var address: Address
 }

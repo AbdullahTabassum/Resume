@@ -20,6 +20,7 @@
 		285B9BF722D52B3E00D72F1D /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF622D52B3E00D72F1D /* Resume.swift */; };
 		285B9BF922D52BC300D72F1D /* Positions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF822D52BC300D72F1D /* Positions.swift */; };
 		285B9BFB22D52C6900D72F1D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BFA22D52C6900D72F1D /* Level.swift */; };
+		285B9BFD22D532A500D72F1D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BFC22D532A500D72F1D /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		285B9BF622D52B3E00D72F1D /* Resume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resume.swift; sourceTree = "<group>"; };
 		285B9BF822D52BC300D72F1D /* Positions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Positions.swift; sourceTree = "<group>"; };
 		285B9BFA22D52C6900D72F1D /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		285B9BFC22D532A500D72F1D /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				285B9BF622D52B3E00D72F1D /* Resume.swift */,
 				285B9BF822D52BC300D72F1D /* Positions.swift */,
 				285B9BFA22D52C6900D72F1D /* Level.swift */,
+				285B9BFC22D532A500D72F1D /* Address.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				285B9BCB22D5295600D72F1D /* ViewController.swift in Sources */,
 				285B9BF922D52BC300D72F1D /* Positions.swift in Sources */,
 				285B9BFB22D52C6900D72F1D /* Level.swift in Sources */,
+				285B9BFD22D532A500D72F1D /* Address.swift in Sources */,
 				285B9BF322D52ACF00D72F1D /* ResumeService.swift in Sources */,
 				285B9BF722D52B3E00D72F1D /* Resume.swift in Sources */,
 				285B9BF522D52B3300D72F1D /* ResumeViewModel.swift in Sources */,
