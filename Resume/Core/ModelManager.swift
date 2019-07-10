@@ -16,6 +16,8 @@ protocol ModelManager {
 
 struct ModelManagerImpl: ModelManager {
 
+    let service = LocalResumeService(parser: ParserImpl())
+    
     init() {
 
     }
