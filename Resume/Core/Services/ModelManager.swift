@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+typealias LoadResumeCompletion = (LoadingResult<Resume>) -> Void
+
+protocol ModelManager {
+    func loadResume(completion: @escaping LoadResumeCompletion)
+}
+
+struct ModelManagerImpl: ModelManager {
+
+    init() {
+
+    }
+    func loadResume(completion: LoadResumeCompletion) {
+
+    }
+}
