@@ -9,9 +9,9 @@
 import Foundation
 
 struct Position: Codable {
-    var level: Level
+    var level: Int
     var positionName: String
-    var from: Date
-    var to: Date?
+    var from: String
+    var to: String?
     var description: String
 }

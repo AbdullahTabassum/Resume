@@ -21,7 +21,7 @@ enum ResumeError: Error {
 }
 
 protocol ResumeService {
-    func downloadResume(completion : @escaping LoadResumeCompletion)
+    func loadResume(completion : @escaping LoadResumeCompletion)
 }
 
 class ResumeServiceImpl: ResumeService {
@@ -31,8 +31,8 @@ class ResumeServiceImpl: ResumeService {
         self.resumeParser = parser
     }
 
-    func downloadResume(completion: @escaping LoadResumeCompletion) {
-        guard let url: URL = URL(string: Endpoints.Git.resume) else {
+    func loadResume(completion: @escaping LoadResumeCompletion) {
+        guard let url: URL = URL(string: Endpoints.Git.resume2) else {
             completion(LoadingResult.failure(ResumeError.malformedURL))
             return
         }

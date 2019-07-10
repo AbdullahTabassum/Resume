@@ -18,7 +18,9 @@ struct ParserImpl: Parser {
 
         let decoder = JSONDecoder()
 
-        guard let parsedData = try? decoder.decode(type, from: data) else {return nil}
+        guard let parsedData = try? decoder.decode(type, from: data) else {
+            return nil
+        }
 
         return parsedData
     }
