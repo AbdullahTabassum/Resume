@@ -26,15 +26,19 @@ typealias ResumeListener = (Resume) -> Void
 class ResumeVM: ResumeViewModel{
 
     var resume: Resume?
-    var modelManager: ModelManager
+    var modelManager: ModelManager?
 
     init(manager: ModelManager) {
         modelManager = manager
     }
 
+    init(res: Resume) {
+        resume = res
+    }
+
     func loadResume(reslistener: ResumeListener?) {
         /// download resume
-        modelManager.loadResume(completion: {[weak self] result in
+        modelManager?.loadResume(completion: {[weak self] result in
             switch result {
             case .success(let lResume):
                 self?.resume = lResume

@@ -13,6 +13,18 @@ class ResumeView: UIView {
 
     var resViewModel: ResumeViewModel?
 
+    struct AccessilibityIdentifiers {
+        static let nameTitle = "nameTitle"
+        static let objective = "objective"
+        static let objectiveTitle = "objectiveTitle"
+        static let phoneNumber = "phoneNumber"
+        static let contactInfo = "contactInfo"
+        static let address = "address"
+        static let experience = "experience"
+        static let languageTitle = "languageTitle"
+        static let language = "language"
+    }
+
     ///ui subviews
     var nameTitle: UILabel = {
         let label = UILabel()
@@ -21,6 +33,7 @@ class ResumeView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.accessibilityIdentifier = AccessilibityIdentifiers.nameTitle
         return label
     }()
 
@@ -31,6 +44,7 @@ class ResumeView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.accessibilityIdentifier = AccessilibityIdentifiers.objective
         return label
     }()
 
@@ -41,6 +55,7 @@ class ResumeView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.accessibilityIdentifier = AccessilibityIdentifiers.objectiveTitle
         return label
     }()
 
@@ -51,6 +66,7 @@ class ResumeView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.accessibilityIdentifier = AccessilibityIdentifiers.phoneNumber
         return label
     }()
 
@@ -61,6 +77,7 @@ class ResumeView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.accessibilityIdentifier = AccessilibityIdentifiers.contactInfo
         return label
     }()
 
@@ -72,6 +89,7 @@ class ResumeView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.accessibilityIdentifier = AccessilibityIdentifiers.address
         return label
     }()
 
@@ -82,6 +100,7 @@ class ResumeView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.accessibilityIdentifier = AccessilibityIdentifiers.experience
         return label
     }()
 
@@ -92,6 +111,7 @@ class ResumeView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.accessibilityIdentifier = AccessilibityIdentifiers.languageTitle
         return label
     }()
 
@@ -102,6 +122,7 @@ class ResumeView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.accessibilityIdentifier = AccessilibityIdentifiers.language
         return label
     }()
 

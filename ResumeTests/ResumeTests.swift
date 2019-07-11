@@ -8,20 +8,27 @@
 
 import XCTest
 @testable import Resume
-
+/// testing the ResumeViewModel
 class ResumeTests: XCTestCase {
 
+    var resumeViewModel: ResumeViewModel?
+
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        if let resume = loadResume(file: "resume") {
+            resumeViewModel = ResumeVM(res: resume)
+        }
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testPhoneNumber() {
+        XCTAssertEqual(resumeViewModel?.phone, "416-834-9260")
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAddress() {
+        XCTAssertEqual(resumeViewModel?.address, "3842 - Scope ave. - Toronto - Canada")
+    }
+
+    func testLanguages() {
+        XCTAssertEqual(resumeViewModel?.language, "English, Arabic, Swahili, Urdu, Spanish, German")
     }
 
     func testPerformanceExample() {
@@ -31,4 +38,21 @@ class ResumeTests: XCTestCase {
         }
     }
 
+}
+
+extension ResumeTests {
+    func loadResume(file: String) -> Resume? {
+        let lParser = ParserImpl()
+        if let path = Bundle.main.path(forResource: file, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                if let resume = lParser.decode(type: Resume.self, from: data) {
+                    return resume
+                }
+            } catch {
+                return nil
+            }
+        }
+        return nil
+    }
 }

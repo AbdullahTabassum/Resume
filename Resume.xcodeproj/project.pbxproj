@@ -14,6 +14,40 @@
 		2822587B22D67ADF0098C9D0 /* ResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587A22D67ADF0098C9D0 /* ResumeView.swift */; };
 		2822587E22D6FA9C0098C9D0 /* PositionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587D22D6FA9C0098C9D0 /* PositionCellView.swift */; };
 		2822588022D6FCC90098C9D0 /* PositionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587F22D6FCC90098C9D0 /* PositionViewModel.swift */; };
+		282258FF22D78D2E0098C9D0 /* ResumeUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282258FE22D78D2E0098C9D0 /* ResumeUITest.swift */; };
+		2822590022D7920F0098C9D0 /* ResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587A22D67ADF0098C9D0 /* ResumeView.swift */; };
+		2822590122D7928B0098C9D0 /* PositionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587D22D6FA9C0098C9D0 /* PositionCellView.swift */; };
+		2822590222D792960098C9D0 /* ResumeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF422D52B3300D72F1D /* ResumeViewModel.swift */; };
+		2822590322D792D10098C9D0 /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF622D52B3E00D72F1D /* Resume.swift */; };
+		2822590422D792D50098C9D0 /* Positions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF822D52BC300D72F1D /* Positions.swift */; };
+		2822590522D792D70098C9D0 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BFA22D52C6900D72F1D /* Level.swift */; };
+		2822590622D792DA0098C9D0 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BFC22D532A500D72F1D /* Address.swift */; };
+		2822590722D792DE0098C9D0 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BCA22D5295600D72F1D /* ResumeViewController.swift */; };
+		2822590822D792E50098C9D0 /* PositionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587F22D6FCC90098C9D0 /* PositionViewModel.swift */; };
+		2822590922D792E90098C9D0 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF022D52AC100D72F1D /* Parser.swift */; };
+		2822590A22D792EC0098C9D0 /* ResumeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587822D673AD0098C9D0 /* ResumeCoordinator.swift */; };
+		2822590B22D792EF0098C9D0 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BEE22D52AB100D72F1D /* ModelManager.swift */; };
+		2822590C22D7930D0098C9D0 /* ResumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF222D52ACF00D72F1D /* ResumeService.swift */; };
+		2822590D22D793100098C9D0 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587122D584250098C9D0 /* Endpoints.swift */; };
+		2822590E22D793140098C9D0 /* LocalResumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587622D635AD0098C9D0 /* LocalResumeService.swift */; };
+		2822591622D795640098C9D0 /* ResumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822591522D795640098C9D0 /* ResumeUITests.swift */; };
+		2822591D22D795940098C9D0 /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF622D52B3E00D72F1D /* Resume.swift */; };
+		2822591E22D795970098C9D0 /* Positions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF822D52BC300D72F1D /* Positions.swift */; };
+		2822591F22D795990098C9D0 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BFA22D52C6900D72F1D /* Level.swift */; };
+		2822592022D7959C0098C9D0 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BFC22D532A500D72F1D /* Address.swift */; };
+		2822592122D7959F0098C9D0 /* PositionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587D22D6FA9C0098C9D0 /* PositionCellView.swift */; };
+		2822592222D795A10098C9D0 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BCA22D5295600D72F1D /* ResumeViewController.swift */; };
+		2822592322D795A30098C9D0 /* ResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587A22D67ADF0098C9D0 /* ResumeView.swift */; };
+		2822592422D795A60098C9D0 /* ResumeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF422D52B3300D72F1D /* ResumeViewModel.swift */; };
+		2822592522D795A90098C9D0 /* PositionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587F22D6FCC90098C9D0 /* PositionViewModel.swift */; };
+		2822592622D795AB0098C9D0 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF022D52AC100D72F1D /* Parser.swift */; };
+		2822592722D795AE0098C9D0 /* ResumeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587822D673AD0098C9D0 /* ResumeCoordinator.swift */; };
+		2822592822D795B00098C9D0 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BEE22D52AB100D72F1D /* ModelManager.swift */; };
+		2822592922D795B40098C9D0 /* resume.json in Resources */ = {isa = PBXBuildFile; fileRef = 2822587422D635160098C9D0 /* resume.json */; };
+		2822592A22D795B40098C9D0 /* resume.json in Resources */ = {isa = PBXBuildFile; fileRef = 2822587422D635160098C9D0 /* resume.json */; };
+		2822592B22D795B70098C9D0 /* ResumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BF222D52ACF00D72F1D /* ResumeService.swift */; };
+		2822592C22D795B90098C9D0 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587122D584250098C9D0 /* Endpoints.swift */; };
+		2822592D22D795BB0098C9D0 /* LocalResumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587622D635AD0098C9D0 /* LocalResumeService.swift */; };
 		285B9BC922D5295600D72F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BC822D5295600D72F1D /* AppDelegate.swift */; };
 		285B9BCB22D5295600D72F1D /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BCA22D5295600D72F1D /* ResumeViewController.swift */; };
 		285B9BD022D5295900D72F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285B9BCF22D5295900D72F1D /* Assets.xcassets */; };
@@ -30,6 +64,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2822591822D795640098C9D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 285B9BBD22D5295600D72F1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285B9BC422D5295600D72F1D;
+			remoteInfo = Resume;
+		};
 		285B9BDA22D5295900D72F1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 285B9BBD22D5295600D72F1D /* Project object */;
@@ -47,6 +88,10 @@
 		2822587A22D67ADF0098C9D0 /* ResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeView.swift; sourceTree = "<group>"; };
 		2822587D22D6FA9C0098C9D0 /* PositionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCellView.swift; sourceTree = "<group>"; };
 		2822587F22D6FCC90098C9D0 /* PositionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewModel.swift; sourceTree = "<group>"; };
+		282258FE22D78D2E0098C9D0 /* ResumeUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeUITest.swift; sourceTree = "<group>"; };
+		2822591322D795640098C9D0 /* ResumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2822591522D795640098C9D0 /* ResumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeUITests.swift; sourceTree = "<group>"; };
+		2822591722D795640098C9D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285B9BC522D5295600D72F1D /* Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285B9BC822D5295600D72F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		285B9BCA22D5295600D72F1D /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +112,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2822591022D795640098C9D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		285B9BC222D5295600D72F1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,11 +152,21 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		2822591422D795640098C9D0 /* ResumeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2822591522D795640098C9D0 /* ResumeUITests.swift */,
+				2822591722D795640098C9D0 /* Info.plist */,
+			);
+			path = ResumeUITests;
+			sourceTree = "<group>";
+		};
 		285B9BBC22D5295600D72F1D = {
 			isa = PBXGroup;
 			children = (
 				285B9BC722D5295600D72F1D /* Resume */,
 				285B9BDC22D5295900D72F1D /* ResumeTests */,
+				2822591422D795640098C9D0 /* ResumeUITests */,
 				285B9BC622D5295600D72F1D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +176,7 @@
 			children = (
 				285B9BC522D5295600D72F1D /* Resume.app */,
 				285B9BD922D5295900D72F1D /* ResumeTests.xctest */,
+				2822591322D795640098C9D0 /* ResumeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				285B9BDD22D5295900D72F1D /* ResumeTests.swift */,
+				282258FE22D78D2E0098C9D0 /* ResumeUITest.swift */,
 				285B9BDF22D5295900D72F1D /* Info.plist */,
 			);
 			path = ResumeTests;
@@ -205,6 +269,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2822591222D795640098C9D0 /* ResumeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2822591A22D795640098C9D0 /* Build configuration list for PBXNativeTarget "ResumeUITests" */;
+			buildPhases = (
+				2822590F22D795640098C9D0 /* Sources */,
+				2822591022D795640098C9D0 /* Frameworks */,
+				2822591122D795640098C9D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2822591922D795640098C9D0 /* PBXTargetDependency */,
+			);
+			name = ResumeUITests;
+			productName = ResumeUITests;
+			productReference = 2822591322D795640098C9D0 /* ResumeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		285B9BC422D5295600D72F1D /* Resume */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 285B9BE222D5295900D72F1D /* Build configuration list for PBXNativeTarget "Resume" */;
@@ -250,6 +332,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Abdullah Tabassum";
 				TargetAttributes = {
+					2822591222D795640098C9D0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 285B9BC422D5295600D72F1D;
+					};
 					285B9BC422D5295600D72F1D = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -274,11 +360,20 @@
 			targets = (
 				285B9BC422D5295600D72F1D /* Resume */,
 				285B9BD822D5295900D72F1D /* ResumeTests */,
+				2822591222D795640098C9D0 /* ResumeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2822591122D795640098C9D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2822592922D795B40098C9D0 /* resume.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		285B9BC322D5295600D72F1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,12 +388,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2822592A22D795B40098C9D0 /* resume.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2822590F22D795640098C9D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2822592D22D795BB0098C9D0 /* LocalResumeService.swift in Sources */,
+				2822592422D795A60098C9D0 /* ResumeViewModel.swift in Sources */,
+				2822592622D795AB0098C9D0 /* Parser.swift in Sources */,
+				2822591D22D795940098C9D0 /* Resume.swift in Sources */,
+				2822592222D795A10098C9D0 /* ResumeViewController.swift in Sources */,
+				2822592C22D795B90098C9D0 /* Endpoints.swift in Sources */,
+				2822592522D795A90098C9D0 /* PositionViewModel.swift in Sources */,
+				2822591E22D795970098C9D0 /* Positions.swift in Sources */,
+				2822592B22D795B70098C9D0 /* ResumeService.swift in Sources */,
+				2822591F22D795990098C9D0 /* Level.swift in Sources */,
+				2822592122D7959F0098C9D0 /* PositionCellView.swift in Sources */,
+				2822592822D795B00098C9D0 /* ModelManager.swift in Sources */,
+				2822591622D795640098C9D0 /* ResumeUITests.swift in Sources */,
+				2822592022D7959C0098C9D0 /* Address.swift in Sources */,
+				2822592322D795A30098C9D0 /* ResumeView.swift in Sources */,
+				2822592722D795AE0098C9D0 /* ResumeCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		285B9BC122D5295600D72F1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,13 +445,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2822590622D792DA0098C9D0 /* Address.swift in Sources */,
+				2822590322D792D10098C9D0 /* Resume.swift in Sources */,
+				2822590822D792E50098C9D0 /* PositionViewModel.swift in Sources */,
+				2822590B22D792EF0098C9D0 /* ModelManager.swift in Sources */,
+				2822590422D792D50098C9D0 /* Positions.swift in Sources */,
+				2822590722D792DE0098C9D0 /* ResumeViewController.swift in Sources */,
+				2822590A22D792EC0098C9D0 /* ResumeCoordinator.swift in Sources */,
+				2822590C22D7930D0098C9D0 /* ResumeService.swift in Sources */,
+				282258FF22D78D2E0098C9D0 /* ResumeUITest.swift in Sources */,
+				2822590122D7928B0098C9D0 /* PositionCellView.swift in Sources */,
+				2822590222D792960098C9D0 /* ResumeViewModel.swift in Sources */,
+				2822590922D792E90098C9D0 /* Parser.swift in Sources */,
 				285B9BDE22D5295900D72F1D /* ResumeTests.swift in Sources */,
+				2822590522D792D70098C9D0 /* Level.swift in Sources */,
+				2822590D22D793100098C9D0 /* Endpoints.swift in Sources */,
+				2822590022D7920F0098C9D0 /* ResumeView.swift in Sources */,
+				2822590E22D793140098C9D0 /* LocalResumeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2822591922D795640098C9D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 285B9BC422D5295600D72F1D /* Resume */;
+			targetProxy = 2822591822D795640098C9D0 /* PBXContainerItemProxy */;
+		};
 		285B9BDB22D5295900D72F1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 285B9BC422D5295600D72F1D /* Resume */;
@@ -352,6 +492,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2822591B22D795640098C9D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4582K4QGAP;
+				INFOPLIST_FILE = ResumeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.td.abdullah.ResumeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Resume;
+			};
+			name = Debug;
+		};
+		2822591C22D795640098C9D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4582K4QGAP;
+				INFOPLIST_FILE = ResumeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.td.abdullah.ResumeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Resume;
+			};
+			name = Release;
+		};
 		285B9BE022D5295900D72F1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -549,6 +727,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2822591A22D795640098C9D0 /* Build configuration list for PBXNativeTarget "ResumeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2822591B22D795640098C9D0 /* Debug */,
+				2822591C22D795640098C9D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		285B9BC022D5295600D72F1D /* Build configuration list for PBXProject "Resume" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
