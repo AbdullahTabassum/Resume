@@ -1,1 +1,36 @@
-{"name":"Abdullah Tabssum","positions":[{"level":0,"positionName":"Software Developer","from":"Date","to":"Date?","description":"created awesome mobile apps!"}],"phone":"416-834-9260","address":{"street":"Scope ave.","number":3842,"city":"Toronto","province":"Ontario","country":"Canada"}}
+{
+    "name": "Abdullah Tabssum",
+    "objective": "To use my abilities as a developer to further your company to its goals",
+    "positions": [
+        {
+            "level": 0,
+            "positionName": "Software Developer",
+            "from": "Sept-2017",
+            "to": "Sept-2019",
+            "description": "created awesome mobile apps!"
+        },
+        {
+            "level": 3,
+            "positionName": "Software Architect",
+            "from": "Sept-2017",
+            "to": "Sept-2019",
+            "description": "Architected awesome mobile apps!"
+        }
+    ],
+    "phone": "416-834-9260",
+    "address": {
+        "street": "Scope ave.",
+        "number": 3842,
+        "city": "Toronto",
+        "province": "Ontario",
+        "country": "Canada"
+    },
+    "language": [
+        "English",
+        "Arabic",
+        "Swahili",
+        "Urdu",
+        "Spanish",
+        "German"
+    ]
+}

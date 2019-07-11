@@ -24,7 +24,7 @@ struct ResumeCoordinatorImpl: ResumeCoordinator {
         /// parser
         let parser = ParserImpl()
 
-        /// service - can use local for testing with stubs
+        /// service - can use local for testing with stubs, been having trouble with gist.github connectivity
         let service: ResumeService = LocalResumeService(parser: parser)
 
         /// model manager

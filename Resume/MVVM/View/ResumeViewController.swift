@@ -5,14 +5,13 @@
 //  Created by Abdullah Tabassum on 2019-07-09.
 //  Copyright © 2019 Abdullah Tabassum. All rights reserved.
 //
-
 import UIKit
 
 class ResumeViewController: UIViewController {
 
     /// these should not be optional
     var resViewModel: ResumeViewModel
-    var resumeView: ResumeView
+    weak var resumeView: ResumeView?
 
     init(viewModel: ResumeViewModel, view: ResumeView) {
         resViewModel = viewModel
@@ -32,8 +31,11 @@ class ResumeViewController: UIViewController {
         super.viewDidLoad()
 
         /// trigger the view model to load the resume
-        resViewModel.loadResume{ resume in
-            print("This is the resume: \(resume)")
+        resViewModel.loadResume{[weak self] resume in
+            self?.resViewModel.configure(res: resume)
+            if let strongSelf = self {
+                strongSelf.resumeView?.configure(resVM: strongSelf.resViewModel)
+            } /// otherwise no-op
         }
     }
 }

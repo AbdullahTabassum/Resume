@@ -10,14 +10,15 @@ import Foundation
 
 protocol ResumeViewModel {
     var name: String {get set}
-    var positions: [Position] {get set}
+    var positions: [PositionViewModel] {get}
     var phone: String {get set}
     var address: String {get}
     var objective: String? {get set}
     var education: String? {get set}
-    var language: [String]? {get set}
+    var language: String? {get}
 
     func loadResume(reslistener: ResumeListener?)
+    func configure(res: Resume)
 }
 
 typealias ResumeListener = (Resume) -> Void
@@ -32,11 +33,10 @@ class ResumeVM: ResumeViewModel{
     }
 
     func loadResume(reslistener: ResumeListener?) {
-        // access the model manager to download resume
+        /// download resume
         modelManager.loadResume(completion: {[weak self] result in
             switch result {
             case .success(let lResume):
-                print("This is the resume: \(lResume)")
                 self?.resume = lResume
                 reslistener?(lResume)
             case .failure(let error):
@@ -44,6 +44,10 @@ class ResumeVM: ResumeViewModel{
                 self?.resume = nil
             }
         })
+    }
+
+    func configure(res: Resume) {
+        resume = res
     }
 
     var name: String {
@@ -55,12 +59,12 @@ class ResumeVM: ResumeViewModel{
         }
     }
 
-    var positions: [Position] {
+    var positions: [PositionViewModel] {
         get {
-            return resume?.positions ?? []
-        }
-        set {
-            resume?.positions = newValue
+            guard let posVMs = resume?.positions else {
+                return []
+            }
+            return posVMs.map{PositionViewModelImpl(pos: $0)}
         }
     }
 
@@ -100,12 +104,9 @@ class ResumeVM: ResumeViewModel{
         }
     }
 
-    var language: [String]? {
+    var language: String? {
         get {
-            return nil
-        }
-        set {
-            resume?.language = newValue
+            return resume?.language?.joined(separator: ", ")
         }
     }
 }
