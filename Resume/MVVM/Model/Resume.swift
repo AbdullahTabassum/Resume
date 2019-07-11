@@ -13,4 +13,7 @@ struct Resume: Codable {
     var positions: [Position]
     var phone: String
     var address: Address
+    var objective: String?
+    var education: String?
+    var language: [String]?
 }

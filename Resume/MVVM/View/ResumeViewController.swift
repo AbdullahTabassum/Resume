@@ -9,21 +9,32 @@
 import UIKit
 
 class ResumeViewController: UIViewController {
-    let service = LocalResumeService(parser: ParserImpl())
+
+    /// these should not be optional
+    var resViewModel: ResumeViewModel
+    var resumeView: ResumeView
+
+    init(viewModel: ResumeViewModel, view: ResumeView) {
+        resViewModel = viewModel
+        resumeView = view
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) is not supported")
+    }
+
+    override func loadView() {
+        self.view = resumeView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        service.loadResume(completion: {result in
-            switch result {
-            case .success(let resume):
-                print("This is the resume: \(resume)")
-            case .failure(let error):
-                print("error occured \(error)")
-            }
-        })
+        /// trigger the view model to load the resume
+        resViewModel.loadResume{ resume in
+            print("This is the resume: \(resume)")
+        }
     }
-
-
 }
 

@@ -10,9 +10,10 @@
 		2822587222D584250098C9D0 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587122D584250098C9D0 /* Endpoints.swift */; };
 		2822587522D635160098C9D0 /* resume.json in Resources */ = {isa = PBXBuildFile; fileRef = 2822587422D635160098C9D0 /* resume.json */; };
 		2822587722D635AD0098C9D0 /* LocalResumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587622D635AD0098C9D0 /* LocalResumeService.swift */; };
+		2822587922D673AD0098C9D0 /* ResumeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587822D673AD0098C9D0 /* ResumeCoordinator.swift */; };
+		2822587B22D67ADF0098C9D0 /* ResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822587A22D67ADF0098C9D0 /* ResumeView.swift */; };
 		285B9BC922D5295600D72F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BC822D5295600D72F1D /* AppDelegate.swift */; };
 		285B9BCB22D5295600D72F1D /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BCA22D5295600D72F1D /* ResumeViewController.swift */; };
-		285B9BCE22D5295600D72F1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285B9BCC22D5295600D72F1D /* Main.storyboard */; };
 		285B9BD022D5295900D72F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285B9BCF22D5295900D72F1D /* Assets.xcassets */; };
 		285B9BD322D5295900D72F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285B9BD122D5295900D72F1D /* LaunchScreen.storyboard */; };
 		285B9BDE22D5295900D72F1D /* ResumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B9BDD22D5295900D72F1D /* ResumeTests.swift */; };
@@ -40,10 +41,11 @@
 		2822587122D584250098C9D0 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		2822587422D635160098C9D0 /* resume.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resume.json; sourceTree = "<group>"; };
 		2822587622D635AD0098C9D0 /* LocalResumeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalResumeService.swift; sourceTree = "<group>"; };
+		2822587822D673AD0098C9D0 /* ResumeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeCoordinator.swift; sourceTree = "<group>"; };
+		2822587A22D67ADF0098C9D0 /* ResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeView.swift; sourceTree = "<group>"; };
 		285B9BC522D5295600D72F1D /* Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285B9BC822D5295600D72F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		285B9BCA22D5295600D72F1D /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
-		285B9BCD22D5295600D72F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		285B9BCF22D5295900D72F1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		285B9BD222D5295900D72F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		285B9BD422D5295900D72F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,7 +111,6 @@
 			children = (
 				285B9BE922D52A1700D72F1D /* MVVM */,
 				285B9BE822D5299500D72F1D /* Core */,
-				285B9BCC22D5295600D72F1D /* Main.storyboard */,
 				285B9BCF22D5295900D72F1D /* Assets.xcassets */,
 				285B9BD122D5295900D72F1D /* LaunchScreen.storyboard */,
 				285B9BD422D5295900D72F1D /* Info.plist */,
@@ -129,6 +130,9 @@
 		285B9BE822D5299500D72F1D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				285B9BF022D52AC100D72F1D /* Parser.swift */,
+				2822587822D673AD0098C9D0 /* ResumeCoordinator.swift */,
+				285B9BEE22D52AB100D72F1D /* ModelManager.swift */,
 				2822587322D635050098C9D0 /* Stub */,
 				285B9BED22D52A8E00D72F1D /* Services */,
 				285B9BC822D5295600D72F1D /* AppDelegate.swift */,
@@ -158,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				285B9BCA22D5295600D72F1D /* ResumeViewController.swift */,
+				2822587A22D67ADF0098C9D0 /* ResumeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,8 +181,6 @@
 		285B9BED22D52A8E00D72F1D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				285B9BEE22D52AB100D72F1D /* ModelManager.swift */,
-				285B9BF022D52AC100D72F1D /* Parser.swift */,
 				285B9BF222D52ACF00D72F1D /* ResumeService.swift */,
 				2822587122D584250098C9D0 /* Endpoints.swift */,
 				2822587622D635AD0098C9D0 /* LocalResumeService.swift */,
@@ -269,7 +272,6 @@
 				2822587522D635160098C9D0 /* resume.json in Resources */,
 				285B9BD322D5295900D72F1D /* LaunchScreen.storyboard in Resources */,
 				285B9BD022D5295900D72F1D /* Assets.xcassets in Resources */,
-				285B9BCE22D5295600D72F1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,10 +291,12 @@
 			files = (
 				285B9BF122D52AC100D72F1D /* Parser.swift in Sources */,
 				285B9BCB22D5295600D72F1D /* ResumeViewController.swift in Sources */,
+				2822587922D673AD0098C9D0 /* ResumeCoordinator.swift in Sources */,
 				285B9BF922D52BC300D72F1D /* Positions.swift in Sources */,
 				285B9BFB22D52C6900D72F1D /* Level.swift in Sources */,
 				2822587722D635AD0098C9D0 /* LocalResumeService.swift in Sources */,
 				285B9BFD22D532A500D72F1D /* Address.swift in Sources */,
+				2822587B22D67ADF0098C9D0 /* ResumeView.swift in Sources */,
 				285B9BF322D52ACF00D72F1D /* ResumeService.swift in Sources */,
 				285B9BF722D52B3E00D72F1D /* Resume.swift in Sources */,
 				285B9BF522D52B3300D72F1D /* ResumeViewModel.swift in Sources */,
@@ -321,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		285B9BCC22D5295600D72F1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				285B9BCD22D5295600D72F1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		285B9BD122D5295900D72F1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

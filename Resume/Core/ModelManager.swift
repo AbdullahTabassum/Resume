@@ -16,12 +16,15 @@ protocol ModelManager {
 
 struct ModelManagerImpl: ModelManager {
 
-    let service = LocalResumeService(parser: ParserImpl())
-    
-    init() {
+    let resService: ResumeService
 
+    init(service: ResumeService) {
+        resService = service
     }
-    func loadResume(completion: LoadResumeCompletion) {
 
+    func loadResume(completion: @escaping LoadResumeCompletion) {
+        resService.loadResume(completion: {result in
+            completion(result)
+        })
     }
 }
